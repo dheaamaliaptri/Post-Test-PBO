@@ -26,7 +26,7 @@ Program ini dibagi ke dalam dua package utama:
    Package ini berisi logika utama dari program, seperti interaksi pengguna dan manajemen pesanan.
    - Class Main
      Ini adalah entry point dari program yang menampilkan pesan selamat datang dan menjalankan menu utama serta menerima input dari pengguna untuk mengelola pesanan.
-   - Methods:
+   - Methods
      1. main(): Merupakan method utama yang menampilkan menu pilihan CRUD untuk pesanan pakaian.
      2. isNumeric(String str): Method utility untuk memeriksa apakah input dari pengguna berupa angka atau tidak. Method ini digunakan untuk validasi input menu.
    - Class ManajemenPesanan
