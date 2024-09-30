@@ -12,14 +12,14 @@ public class PesananPelanggan {
     private final String namaPelanggan;
     private final String modelPakaian;
     private final String bahanPakaian;
-    private final double beratBadan;
+    private final String ukuranPakaian;
     private String status;  // Belum diproses, Dalam proses, Selesai
 
-    public PesananPelanggan(String namaPelanggan, String modelPakaian, String bahanPakaian, double beratBadan, double ukuranPinggang) {
+    public PesananPelanggan(String namaPelanggan, String modelPakaian, String bahanPakaian, String ukuranPakaian) {
         this.namaPelanggan = namaPelanggan;
         this.modelPakaian = modelPakaian;
         this.bahanPakaian = bahanPakaian;
-        this.beratBadan = beratBadan;
+        this.ukuranPakaian = ukuranPakaian;
         this.status = "Belum diproses";  // Default status
     }
 
@@ -27,7 +27,7 @@ public class PesananPelanggan {
         System.out.println("Nama: " + namaPelanggan);
         System.out.println("Model Pakaian: " + modelPakaian);
         System.out.println("Bahan: " + bahanPakaian);
-        System.out.println("Berat Badan: " + beratBadan);
+        System.out.println("Ukuran: " + ukuranPakaian);
         System.out.println("Status: " + status);
         System.out.println();
     }
