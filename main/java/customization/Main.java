@@ -44,20 +44,17 @@ public class Main {
                     String model = scanner.nextLine();
                     System.out.print("Masukkan bahan pakaian: ");
                     String bahan = scanner.nextLine();
-                    System.out.print("Masukkan berat badan: ");
-                    double berat = scanner.nextDouble();
-                    System.out.print("Masukkan ukuran pinggang: ");
-                    double ukuranPinggang = scanner.nextDouble();
-                    scanner.nextLine();  // Consume newline
+                    System.out.print("Masukkan ukuran pakaian (S, M, L, XL): ");
+                    String ukuran = scanner.nextLine();
 
-                    PesananPelanggan pesanan = new PesananPelanggan(nama, model, bahan, berat, ukuranPinggang);
+                    PesananPelanggan pesanan = new PesananPelanggan(nama, model, bahan, ukuran);
                     manajemen.tambahPesanan(pesanan);
 
                 } else if (pilihan == 2) {
                     manajemen.tampilkanSemuaPesanan();
 
                 } else if (pilihan == 3) {
-                    System.out.print("Masukkan nama pelanggan yang akan diupdate: ");
+                    System.out.print("Masukkan nama pelanggan yang akan diperbarui: ");
                     String namaPelanggan = scanner.nextLine();
                     System.out.println("Pilih status baru: ");
                     System.out.println("1. Sedang Diproses");
@@ -75,7 +72,7 @@ public class Main {
                     ManajemenPesanan.tampilkanPesananSelesai();
 
                 } else if (pilihan == 6) {
-                    System.out.println("Keluar dari program...");
+                    System.out.println("| Thank you for coming to our place, hope you like it! |");
                     break;
 
                 } else {
