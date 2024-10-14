@@ -43,11 +43,17 @@ Aplikasi sederhana ini adalah sistem manajemen pesanan berbasis objek, dengan ko
 
    - Menu: Program menawarkan beberapa pilihan kepada pengguna, seperti menambah pesanan, menampilkan semua pesanan, 
    memperbarui status pesanan, menghapus pesanan yang selesai, dan keluar dari program.
+
      • Penambahan Pesanan: Menggunakan method tambahPesanan() untuk menambahkan pesanan baru ke dalam daftar.
+     
      • Menampilkan Semua Pesanan: Menggunakan method tampilkanSemuaPesanan() untuk menampilkan daftar pesanan pelanggan.
+     
      • Update Status Pesanan: Menggunakan method updateStatusPesanan() untuk memperbarui status pesanan berdasarkan nama 
      pelanggan.
-     • Hapus Pesanan Selesai: Menggunakan hapusPesananSelesai() untuk menghapus pesanan yang statusnya "Selesai" dari daftar.
+     
+     • Hapus Pesanan Selesai: Menggunakan hapusPesananSelesai() untuk menghapus pesanan yang statusnya "Selesai" dari 
+     daftar.
+     
      • Tampilkan Total Pesanan Selesai: Menggunakan tampilkanPesananSelesai() untuk menampilkan jumlah pesanan yang telah 
      selesai.
 
