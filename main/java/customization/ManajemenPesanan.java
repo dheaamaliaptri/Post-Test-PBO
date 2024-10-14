@@ -11,17 +11,18 @@ import java.util.ArrayList;
  *
  * @author dheaa
  */
-public class ManajemenPesanan {
+public class ManajemenPesanan implements CRUD_Pesanan { 
     private final ArrayList<PesananPelanggan> daftarPesanan = new ArrayList<>();
-    private static int pesananSelesai = 0;  // Static untuk menghitung pesanan yang selesai
+    private static int pesananSelesai = 0;
 
-    // Menambah pesanan baru
-    public void tambahPesanan(PesananPelanggan pesanan) {
+    // Method yang tidak boleh di-override
+    @Override
+    public final void tambahPesanan(PesananPelanggan pesanan) {
         daftarPesanan.add(pesanan);
         System.out.println("Pesanan berhasil ditambahkan!\n");
     }
 
-    // Menampilkan semua pesanan
+    @Override
     public void tampilkanSemuaPesanan() {
         if (daftarPesanan.isEmpty()) {
             System.out.println("Belum ada pesanan yang terdaftar.");
@@ -33,7 +34,7 @@ public class ManajemenPesanan {
         }
     }
 
-    // Mengupdate status pesanan
+    @Override
     public void updateStatusPesanan(String namaPelanggan, String statusBaru) {
         for (PesananPelanggan pesanan : daftarPesanan) {
             if (pesanan.getNamaPelanggan().equalsIgnoreCase(namaPelanggan)) {
@@ -51,7 +52,7 @@ public class ManajemenPesanan {
         System.out.println("Pesanan atas nama " + namaPelanggan + " tidak ditemukan.\n");
     }
 
-    // Menghapus pesanan yang selesai
+    @Override
     public void hapusPesananSelesai() {
         daftarPesanan.removeIf(pesanan -> pesanan.getStatus().equals("Selesai"));
         System.out.println("Semua pesanan yang selesai telah dihapus.\n");
